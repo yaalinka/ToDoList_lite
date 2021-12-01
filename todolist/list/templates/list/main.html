@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDo List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+<style>
+    body {
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 50px;
+    background-color: #E7DDCE;
+    }
+
+    .container {
+    min-height: 420px;
+    max-width: 550px;
+    background-image: url("https://parketremont.ru/upload/iblock/c03/c03c5c9d79cf71de4638edd24a5f60f8.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    margin: auto;
+    padding: 40px;
+    -webkit-box-shadow: 10px 10px 25px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 25px -2px rgba(0, 0, 0, 0.3);
+    }
+
+    p, a {
+    text-decoration: none;
+    transition: all 9s ease-out;
+    -webkit-transition: all .5s ease;
+    }
+
+    .header-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(59, 55, 49, 0.5);
+    color: #fff;
+    font-size: 70%;
+    padding: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+    }
+
+    .header-bar a {font-size: 140%;
+    color: #fff}
+
+    .task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 18px;
+    background-color: #fff;
+    border-top: 1px solid gray;
+    -webkit-border-top: 1px solid gray;
+    }
+
+    .task-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    }
+
+    .task-incomplete-icon {
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(59, 55, 49, .25);
+    border-radius:  50%;
+    -webkit-border-radius:  50%;
+    }
+
+    .task-complete-icon {
+    margin-right: 20px;
+    height: 9px;
+    width: 9px;
+    border: 6px solid rgba(59, 55, 49, .6);
+    -webkit-border: 6px solid rgba(59, 55, 49, .6);
+    background-color: rgba(59, 55, 49, .25);
+    border-radius:  50%;
+    -webkit-border-radius:  50%;
+    }
+
+    .delete-link {
+    font-weight:900;
+    color: #a10505;
+    font-size: 22px;
+    line-height: 0;
+}
+
+    #search-add-wrapper {
+    border-radius: 25px 25px 0 0;
+    -webkit-border-radius: 25px 25px 0 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+
+    #add-link {
+    margin-right: 20px;
+    color: a1056d;
+    font-size: 42px;
+    text-shadow: 1px 1px rgba(145, 4, 98, 0.77);
+    -webkit-text-shadow: 1px 1px rgba(145, 4, 98, 0.77);
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea {
+    margin-right: 10px;
+    margin-left: 15px;
+    border: 1px solid rgb(59, 55, 49);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 90%;
+    }
+
+    label {
+    padding-top: 10px !important;
+    display: block;
+    }
+
+    .button {
+    border: 1px solid rgb(59, 55, 49);
+    background-color: #fafafa;
+    color: rgb(59, 55, 49);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 9s ease-out;
+    -webkit-transition: all .5s ease;
+    }
+
+    .card-body {
+    padding: 20px 30px 30px 30px;
+    background-color: #fff;
+    color: #696868;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    font-size: 20px;
+    }
+
+    a:hover {
+    color: #666565;
+    transform: scale(1.05);
+    }
+
+    .button:hover {
+    color: white;
+    background-color: rgba(59, 55, 49, .5);
+    }
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+      {% block content %}
+
+      {% endblock content %}
+
+  </div>
+
+</body>
+</html>
